@@ -1,7 +1,7 @@
 # Tourism-Agency
 Simple tourism agency web app using CRUD operations in .NET
 
-For the whole documentation, read the TourismAgency.docx file on master branch.
+For the whole documentation, read the TourismAgency.docx file on master branch. <br>
 NOTE: The documentation is written in Romanian.
 
 **App Preview:**
