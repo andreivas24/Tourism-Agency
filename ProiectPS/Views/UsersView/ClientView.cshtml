@@ -1,0 +1,32 @@
+﻿@model ProiectPS.Presenter.ClientPresenter
+
+@{
+}
+
+@*<h1>Display and Filter Packets:</h1>
+
+namespace ProiectPS.Views.UsersView
+{
+	public class ClientView
+	{
+		public Packet DisplayPackets(Packet packets)
+		{
+			string output = "<h2>Display packets:</h2>";
+			@foreach (Packet packet in packets)
+			{
+				output += "<p>@packet</p>";
+			}
+			return output;
+		}
+
+		public Packet FilterPackets(Packet packets)
+		{
+			string output = "<h3>Filter packets:</h3>";
+			@foreach (Packet packet in packets)
+			{
+				output += "<p>@packet</p>";
+			}
+				return output;
+		}
+	}
+}*@

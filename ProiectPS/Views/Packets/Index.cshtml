@@ -1,0 +1,32 @@
+﻿@model List<ProiectPS.Models.Domain.Packet>
+
+@{
+}
+
+<h1>Packets</h1>
+
+<table id="myTable" class="table table-bordered table-hover table-sm">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Destination</th>
+			<th>Price</th>
+			<th>StartPeriodOfTime</th>
+			<th>EndPeriodOfTime</th>
+			<th>View Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var packet in Model)
+		{
+			<tr>
+				<td>@packet.Id</td>
+				<td>@packet.Destination</td>
+				<td>@packet.Price</td>
+				<td>@packet.StartPeriodOfTime.ToString("dd-MM-yyyy")</td>
+				<td>@packet.EndPeriodOfTime.ToString("dd-MM-yyyy")</td>
+				<td><a href="Packets/View/@packet.Id">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

@@ -1,0 +1,34 @@
+﻿@model List<ProiectPS.Models.Domain.Employee>
+
+@{
+}
+
+<h1>Clients</h1>
+
+<table id="myTable" class="table table-bordered table-hover table-sm">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Salary</th>
+			<th>Date Of Birth</th>
+			<th>Role</th>
+			<th>View Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var employee in Model)
+		{
+			<tr>
+				<td>@employee.Id</td>
+				<td>@employee.Name</td>
+				<td>@employee.Email</td>
+				<td>@employee.Salary</td>
+				<td>@employee.DateOfBirth.ToString("dd-MM-yyyy")</td>
+				<td>@employee.Role</td>
+				<td><a href="Clients/View/@employee.Id">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

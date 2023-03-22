@@ -1,0 +1,51 @@
+﻿@model ProiectPS.Presenter.EmployeePresenter
+
+@{
+}
+
+@*<h1>Display and Filter Packets:</h1>
+
+namespace ProiectPS.Views.UsersView
+{
+	public class EmployeeView : ClientView
+	{
+		public User DisplayUsers(User users)
+		{
+			string output = "<h2>Users:</h2>";
+			@foreach (User user in users)
+			{
+				output += "<p>@user</p>";
+			}
+			return output;
+		}
+
+		public User DisplayUserInfo(User user)
+		{
+			string output = <h3>User info:</h3>
+			output += <p>Username: @user.Username</p>;
+			output += <p>Username: @user.Email</p>;
+			output += <p>Username: @user.Phone</p>;
+			return output;
+		}
+
+		public packet DisplayPacketInfo(Packet packet)
+		{
+			string output = <h3>Packet info:</h3>
+			output += <p>Packet destination: @packet.Destination</p>;
+			output += <p>Packet price: @packet.Price</p>;
+			output += <p>Packet start date: @packet.StartPeriodOfTime</p>;
+			output += <p>Packet end date: @packet.EndPeriodOfTime</p>;
+			return output;
+		}
+
+		public DisplaySuccess(string message)
+		{
+			return <p style='color: green;'>Success: @HttpMessageHandler</p>;
+		}
+
+		public DisplayError(string message)
+		{
+			return <p style='color: red;'>Error: @HttpMessageHandler</p>;
+		}
+	}
+}*@

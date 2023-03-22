@@ -1,0 +1,22 @@
+﻿@model ProiectPS.Presenter.AdminPresenter
+
+@{
+}
+
+@*<h1>Pending Users:</h1>
+
+namespace ProiectPS.Views.UsersView
+{
+	public class AdminView : EmployeeView
+	{
+		public User DisplayPendingUsers(User users)
+		{
+			string output = "<h2>Pending users:</h2>";
+			@foreach (User user in users)
+			{
+				output += "<p>@user</p>";
+			}
+			return output;
+		}
+	}
+}*@

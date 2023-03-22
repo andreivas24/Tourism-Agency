@@ -1,0 +1,26 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.table{
+    background: #fff;
+    overflow: auto;
+    box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 5rem;
+}

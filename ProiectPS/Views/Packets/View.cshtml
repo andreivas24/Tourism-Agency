@@ -1,0 +1,41 @@
+﻿@model ProiectPS.Models.UpdatePacketViewModel
+
+@{
+}
+
+<h1>Edit Packet</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id</label>
+        <input asp-for="Id" class="form-control" asp-for="Id" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="Destination" class="form-label">Destination</label>
+        <input asp-for="Destination" class="form-control" asp-for="Destination">
+    </div>
+
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price</label>
+        <input asp-for="Price" type="number" class="form-control" asp-for="Price">
+    </div>
+
+    <div class="mb-3">
+        <label for="StartPeriodOfTime" class="form-label">StartPeriodOfTime</label>
+        <input asp-for="StartPeriodOfTime" class="form-control" asp-for="StartPeriodOfTime">
+    </div>
+
+    <div class="mb-3">
+        <label for="@Model.EndPeriodOfTime" class="form-label">EndPeriodOfTime</label>
+        <input asp-for="@Model.EndPeriodOfTime" class="form-control" asp-for="EndPeriodOfTime">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-danger"
+            asp-action="Delete"
+            asp-controller="Packets">
+        Delete
+    </button>
+</form>
+

@@ -1,0 +1,44 @@
+﻿@model ProiectPS.Models.UpdateEmployeeViewModel
+
+@{
+}
+
+<h1>Edit Client</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id</label>
+        <input asp-for="Id" class="form-control" asp-for="Id" readonly>
+    </div>
+
+    <label for="Name" class="form-label">Name</label>
+    <input asp-for="Name" class="form-control" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email Address</label>
+        <input asp-for="Email" class="form-control" asp-for="Email">
+    </div>
+
+    <div class="mb-3">
+        <label for="Salary" class="form-label">Salary</label>
+        <input asp-for="Salary" class="form-control" asp-for="Salary">
+    </div>
+
+    <div class="mb-3">
+        <label for="DateOfBirth" class="form-label">Date Of Birth</label>
+        <input asp-for="DateOfBirth" class="form-control" asp-for="DateOfBirth">
+    </div>
+
+    <div class="mb-3">
+        <label for="Role" class="form-label">Role</label>
+        <input asp-for="Role" class="form-control" asp-for="Role">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-danger"
+    asp-action="Delete"
+    asp-controller="Clients"
+    >Delete</button>
+</form>
+

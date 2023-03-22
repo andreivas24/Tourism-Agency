@@ -1,0 +1,29 @@
+﻿@model ProiectPS.Models.AddPacketViewModel
+
+@{
+}
+
+<h1>Add Packet</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="Destination" class="form-label">Destination</label>
+        <input asp-for="Destination" class="form-control" asp-for="Destination">
+    </div>
+
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price</label>
+        <input asp-for="Price" type="number" class="form-control" asp-for="Price">
+    </div>
+
+    <div class="mb-3">
+        <label for="StartPeriodOfTime" class="form-label">StartPeriodOfTime</label>
+        <input asp-for="StartPeriodOfTime" class="form-control" asp-for="StartPeriodOfTime">
+    </div>
+
+    <div class="mb-3">
+        <label for="EndPeriodOfTime" class="form-label">EndPeriodOfTime</label>
+        <input asp-for="EndPeriodOfTime" class="form-control" asp-for="EndPeriodOfTime">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
